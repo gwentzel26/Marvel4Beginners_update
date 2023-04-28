@@ -96,6 +96,10 @@ h2 {
     background: url(../images/theaterBackground.jpg);
     background-size: cover;
 }
+.comicImage {
+    background: url(../images/comicBackground2.jpg);
+    background-size: cover;
+}
 
 #charSearch,
  #searchBtn {
