@@ -6,6 +6,9 @@ html, body {
     overflow-x: hidden;
 }
 
+main {
+    width: 100%;
+}
 #homePic {
     background-image: url("https://cdn.mos.cms.futurecdn.net/5PG8VxxhYpcngEvBqwvfxb.jpg");
 }
@@ -13,7 +16,9 @@ html, body {
 body {
     font-family: 'Bangers', cursive;
 }
-
+h2 {
+    color: white;
+}
 .h1Container {
     color: rgb(240, 240, 240);
     display: flex;
@@ -87,7 +92,10 @@ body {
     border: 2px  rgb(255, 100, 100);
     border-style: double;
 }
-
+.theaterImage {
+    background: url(../images/theaterBackground.jpg);
+    background-size: cover;
+}
 
 #charSearch,
  #searchBtn {
@@ -109,7 +117,14 @@ body {
 #comicDiv {
     margin-left: 80px;
 }
-
+.movies-container{
+    width: 100%;
+    color: white;
+    display: flex;
+}
+.movie-card {
+    margin-left: 5%;
+}
 @media (width >= 1600px) {
     .h1Container {
         justify-content: start;
