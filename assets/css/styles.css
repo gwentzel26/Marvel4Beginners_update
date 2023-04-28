@@ -191,6 +191,9 @@ h2 {
     /* border: 18px double rgb(123, 1, 1); */
     width: 100%;
 }
+.movieBorder{
+    border: 18px double rgb(126, 0, 0);
+}
 .movie-card {
     margin-left: 5%;
     display: flex;
