@@ -38,20 +38,27 @@ h2 {
     font-weight: bold;
     width: 100vw;
     height: 20vh;
-   
     border-bottom: 2px groove black;
     
 }
 
 .homeLink {
    text-align: center;
+   font-size: 32px;
+}
+.homeLink:hover {
+    scale: 115%;
+    transition-duration: 200ms;
 }
 #h1-link {
     text-decoration: none;
     color: rgb(240, 240, 240);
     text-align: center;
 }
-
+.links:hover {
+    scale: 125%;
+    transition-duration: 200ms;
+}
 .links {
     display: flex;
     flex-wrap: wrap;
@@ -96,6 +103,33 @@ h2 {
     background: url(../images/theaterBackground.jpg);
     background-size: cover;
 }
+.avengersImage {
+    background: url(../images/avengers2Background.avif);
+    background-size: cover;
+}
+.card {
+    background: linear-gradient(rgb(0, 0, 0),rgb(62, 60, 60));
+}
+.card:hover {
+    scale: 107%;
+    transition-duration:  300ms;
+}
+.card-text {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(5, 4, 52);
+    padding: 8px;
+    border: 2px double white;
+}
+
+.hoverScale:hover {
+    scale: 110%;
+    transition-duration:  300ms;
+}
+.movie-card:hover {
+    scale: 107%;
+    transition-duration: 300ms;
+}
 .comicImage {
     background: url(../images/comicBackground2.jpg);
     background-size: cover;
@@ -112,27 +146,66 @@ h2 {
     display: inline;
     height: 10rem;
 }
-
+#comicContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    width: 100%;
+   
+}
 #comic-descrip {
     display: flex;
 
 }
+.h2Container {
+    width: 75%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h2Comic {
+    
+    background: linear-gradient(rgb(0, 0, 0),rgb(62, 60, 60));
+    width: 60%;
+    text-align: center;
+    padding: 2%;
+    border: 4px double rgb(136, 5, 5);
 
+}
 #comicDiv {
-    margin-left: 80px;
+    display: flex;
+    justify-content: center;
 }
 .movies-container{
     width: 100%;
     color: white;
     display: flex;
+    justify-content: center;
+
+    
+}
+.card-img-top {
+    /* border: 18px double rgb(123, 1, 1); */
+    width: 100%;
 }
 .movie-card {
     margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    
 }
 @media (width >= 1600px) {
     .h1Container {
         justify-content: start;
         margin-left: 5%;
+    }
+    .h2Container {
+        width: 50%;
     }
     .linkContainer {
         flex-direction: row;
@@ -142,5 +215,17 @@ h2 {
     .links {
         padding: 0%;
         font-size: 28px;
+    }
+    .movie-card {
+        width: 20%;
+    }
+    .homeLink {
+        font-size: 48px;
+    }
+}
+
+@media (min-width = 800px) {
+    .movie-card{
+        width: 60%;
     }
 }
