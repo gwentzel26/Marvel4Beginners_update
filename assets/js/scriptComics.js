@@ -1,4 +1,3 @@
-
 var infinityBtn = document.getElementById("infinityBtn");
 var phoenixBtn = document.getElementById("phoenixBtn");
 var gwenBtn = document.getElementById("gwenBtn");
@@ -30,15 +29,20 @@ comicLink.style.marginRight = "25px";
   comicDescription.appendChild(comicLink);
  
   var comicDescriptionDiv = document.createElement("div");
+  comicDescriptionDiv.classList = "d-flex flex-column align-items-start justify-content-start"
   comicDescription.append(comicDescriptionDiv);
+  var titleDiv = document.createElement("div");
+  titleDiv.classList = "d-flex w-100 justify-content-center align-items-center"
   var title = document.createElement("h2");
-  comicDescriptionDiv.append(title);
+  comicDescriptionDiv.appendChild(titleDiv);
+  titleDiv.append(title);
   title.textContent = "The Infinity Gauntlet";
   title.style.fontSize = "48px";
   var description = document.createElement("h2");
   comicDescriptionDiv.appendChild(description);
   description.textContent = "Description: ";
   var descripP = document.createElement("p");
+  descripP.classList = "card-text";
   comicDescriptionDiv.append(descripP);
   descripP.textContent = "At the start of The Infinity Gauntlet, the character Thanos has collected all six Infinity Gems and attached them to his gauntlet. With their combined power, he becomes like a god and sets out to win the affection of Mistress Death, the living embodiment of death in the Marvel Universe."
   descripP.style.maxWidth = "85%"
@@ -46,6 +50,7 @@ comicLink.style.marginRight = "25px";
   var comicRatings = document.createElement("h3");
   comicDescriptionDiv.append(comicRatings);
   comicRatings.textContent = "Comic Rating: ";
+  comicRatings.classList = "card-text"
   var comRatingP = document.createElement("span");
   comicDescriptionDiv.append(comRatingP);
   comRatingP.textContent = "8.2";
@@ -68,10 +73,13 @@ comicLink.style.marginRight = "25px";
   var yearIssued = document.createElement("h3");
   comicDescriptionDiv.append(yearIssued);
   yearIssued.textContent = "Year Issued: 1991";
+  yearIssued.classList = "card-text";
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
+  includedChar.classList = "text-white"
   var comicCharP = document.createElement("p");
+  comicCharP.classList = "card-text";
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
   comicCharP.textContent = ["Avengers", " Adam Warlock", " Mephisto", " Thanos", " Silver Surfer", " Nebula"]
@@ -97,6 +105,7 @@ function phoenixSection() {
   
   var comicDescriptionDiv = document.createElement("div");
   comicDescription.appendChild(comicDescriptionDiv);
+  comicDescriptionDiv.classList = "d-flex flex-column align-items-start justify-content-start"
   var title = document.createElement("h2");
   comicDescriptionDiv.append(title);
   title.textContent = "X-Men: The Dark Phoenix Saga";
@@ -105,14 +114,17 @@ function phoenixSection() {
   comicDescriptionDiv.appendChild(description);
   description.textContent = "Description: ";
   var descripP = document.createElement("p");
+  descripP.classList = "card-text";
   comicDescriptionDiv.append(descripP);
   descripP.textContent = "Gathered together by Professor Charles Xavier to protect a world that fears and hates them, the X-Men had fought many battles, been on adventures that spanned galaxies, grappled enemies of limitless might, but none of this could prepare them for the most shocking struggle they would ever face. One of their own members, Jean Grey, has gained power beyond all comprehension, and that power has corrupted her absolutely Now they must decide if the life of the woman they cherish is worth the existence of the entire universe."
   descripP.style.maxWidth = "85%"
   descripP.style.fontSize = "18px"
   var comicRatings = document.createElement("h3");
+  comicRatings.classList = "card-text";
   comicDescriptionDiv.append(comicRatings);
   comicRatings.textContent = "Comic Rating: ";
   var comRatingP = document.createElement("span");
+  comRatingP.classList = "card-text";
   comicDescriptionDiv.append(comRatingP);
   comRatingP.textContent = "8.4";
   comRatingP.style.backgroundColor = "lightGreen"
@@ -132,14 +144,20 @@ function phoenixSection() {
   comicDescriptionDiv.appendChild(goodreadLink);
 
   var yearIssued = document.createElement("h3");
+ 
   comicDescriptionDiv.append(yearIssued);
   yearIssued.textContent = "Year Issued: 1963-2011";
+  yearIssued.classList = "card-text";
   var includedChar = document.createElement("h3");
+
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
+  includedChar.classList = "text-white";
   var comicCharP = document.createElement("p");
+ 
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
+  comicCharP.classList = "card-text";
   comicCharP.textContent = ["Wolverine", " Doctor Strange", " Fantastic Four", " X-men"]
 }
 
@@ -162,6 +180,7 @@ function gwenSection() {
 
   var comicDescriptionDiv = document.createElement("div");
   comicDescription.append(comicDescriptionDiv);
+  comicDescriptionDiv.classList = "d-flex flex-column align-items-start justify-content-start"
   var title = document.createElement("h2");
   comicDescriptionDiv.append(title);
   title.textContent = "The Amazing Spider-man: The Night Gwen Stacy Died";
@@ -172,12 +191,14 @@ function gwenSection() {
   
   var descripP = document.createElement("p");
   comicDescriptionDiv.append(descripP);
+  descripP.classList = "card-text";
   descripP.textContent = "Peter, his girlfriend Gwen Stacy, and acquaintance Mary Jane Watson visit Harry, who is in a sorry state. His father Norman is livid about Harry's condition, blames Peter, Gwen, and Mary Jane for Harry's drug abuse, and throws them out. When Norman hears that he is facing financial ruin, he suffers a breakdown, and suddenly remembers everything. Norman again becomes the Green Goblin and makes it his goal to kill Peter/Spider-Man for all the misery he imagines Spider-Man has caused him and his family."
   descripP.style.maxWidth = "85%"
   descripP.style.fontSize = "18px"
   var comicRatings = document.createElement("h3");
   comicDescriptionDiv.append(comicRatings);
   comicRatings.textContent = "Comic Rating: ";
+  comicRatings.classList = "card-text";
   var comRatingP = document.createElement("span");
   comicDescriptionDiv.append(comRatingP);
   comRatingP.textContent = "8.0";
@@ -200,12 +221,15 @@ function gwenSection() {
   var yearIssued = document.createElement("h3");
   comicDescriptionDiv.append(yearIssued);
   yearIssued.textContent = "Year Issued: 1973";
+  yearIssued.classList = "card-text";
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
+  includedChar.classList = "text-white";
   var comicCharP = document.createElement("p");
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
+  comicCharP.classList = "card-text";
   comicCharP.textContent = ["Spider-man", " Gwen Stacy", " Green Goblin", " Mary Jane Watson", " The Vulture"];
 }
 
@@ -229,6 +253,7 @@ function cwarSection() {
 
   var comicDescriptionDiv = document.createElement("div");
     comicDescription.append(comicDescriptionDiv);
+    comicDescriptionDiv.classList = "d-flex flex-column align-items-start justify-content-start"
   var title = document.createElement("h2");
   comicDescriptionDiv.append(title);
   title.textContent = "Civil War";
@@ -241,9 +266,11 @@ function cwarSection() {
   descripP.textContent = "The superheroes who support the law, including Mister Fantastic and Ms. Marvel, become increasingly authoritarian. Civil War explores the conflict between freedom and security against a backdrop of real-life events and discussions, such as the U.S. government's increased surveillance of its citizens."
   descripP.style.maxWidth = "85%"
   descripP.style.fontSize = "18px"
+  descripP.classList = "card-text";
   var comicRatings = document.createElement("h3");
   comicDescriptionDiv.append(comicRatings);
   comicRatings.textContent = "Comic Rating: ";
+  comicRatings.classList = "card-text";
   var comRatingP = document.createElement("span");
   comicDescriptionDiv.append(comRatingP);
   comRatingP.textContent = "8.2";
@@ -266,12 +293,15 @@ function cwarSection() {
   var yearIssued = document.createElement("h3");
   comicDescriptionDiv.append(yearIssued);
   yearIssued.textContent = "Year Issued: 2006-07";
+  yearIssued.classList = "card-text";
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
+  includedChar.classList = "text-white";
   var comicCharP = document.createElement("p");
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
+  comicCharP.classList = "card-text";
   comicCharP.textContent = ["Iron Man", " Captain America", " Avengers", " Spider-man", " Fantastic Four"]
 }
 
@@ -294,6 +324,7 @@ comicDescription.appendChild(comicLink);
 
 var comicDescriptionDiv = document.createElement("div");
 comicDescription.append(comicDescriptionDiv);
+comicDescriptionDiv.classList = "d-flex flex-column align-items-start justify-content-start"
   var title = document.createElement("h2");
   comicDescriptionDiv.append(title);
   title.textContent = "X-Men: The Age of Apocalypse";
@@ -306,9 +337,11 @@ comicDescription.append(comicDescriptionDiv);
   descripP.textContent = "In a twisted version of the world they knew, the X-Men battle against the eternal mutant Apocalypse as Bishop seeks to repair the timeline. Legion, Xavier's own son, attempts to kill off all of Xavier's enemies; however, when Legion attempts to murder Magneto, Xavier sacrifices his own life to save Magnus. As a result, Magneto casts off his anti-human sentiments and carries on Xavier's dream of peaceful co-existence, thereby founding the X-Men."
   descripP.style.maxWidth = "85%"
   descripP.style.fontSize = "18px"
+  descripP.classList = "card-text";
   var comicRatings = document.createElement("h3");
   comicDescriptionDiv.append(comicRatings);
   comicRatings.textContent = "Comic Rating: ";
+  comicRatings.classList = "card-text";
   var comRatingP = document.createElement("span");
   comicDescriptionDiv.append(comRatingP);
   comRatingP.textContent = "8.4";
@@ -331,12 +364,15 @@ comicDescription.append(comicDescriptionDiv);
   var yearIssued = document.createElement("h3");
   comicDescriptionDiv.append(yearIssued);
   yearIssued.textContent = "Year Issued: 1995";
+  yearIssued.classList = "card-text";
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
+  includedChar.classList = "text-white";
   var comicCharP = document.createElement("p");
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
+  comicCharP.classList = "card-text";
   comicCharP.textContent = ["X-Men", " Magneto", " Legion"]
 }
 
@@ -359,6 +395,7 @@ comicDescription.appendChild(comicLink);
 
 var comicDescriptionDiv = document.createElement("div");
 comicDescription.append(comicDescriptionDiv);
+comicDescriptionDiv.classList = "d-flex flex-column align-items-start justify-content-start"
   var title = document.createElement("h2");
   comicDescriptionDiv.append(title);
   title.style.fontSize = "48px";
@@ -371,9 +408,11 @@ comicDescription.append(comicDescriptionDiv);
   descripP.textContent = "The first mega-crossover of its kind, Secret Wars still stands as a milestone in the comic-book industry. The fate of the entire Marvel Universe hangs in the balance as all of Earth's greatest super heroes face their deadliest foes on the mysterious planet known as Battleworld!"
   descripP.style.maxWidth = "85%"
   descripP.style.fontSize = "18px"
+  descripP.classList = "card-text";
   var comicRatings = document.createElement("h3");
   comicDescriptionDiv.append(comicRatings);
   comicRatings.textContent = "Comic Rating: ";
+  comicRatings.classList = "card-text";
   var comRatingP = document.createElement("span");
   comicDescriptionDiv.append(comRatingP);
   comRatingP.textContent = "7.4";
@@ -396,12 +435,15 @@ comicDescription.append(comicDescriptionDiv);
   var yearIssued = document.createElement("h3");
   comicDescriptionDiv.append(yearIssued);
   yearIssued.textContent = "Year Issued: 1984-85";
+  yearIssued.classList = "card-text";
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
+  includedChar.classList = "text-white";
   var comicCharP = document.createElement("p");
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
+  comicCharP.classList = "card-text";
   comicCharP.textContent = ["Avengers", " Fantastic Four", " X-Men" , " Spider-Man", " Hulk", " Doctor Doom"];
 }
 
@@ -424,6 +466,7 @@ function dareSection() {
   
   var comicDescriptionDiv = document.createElement("div");
   comicDescription.append(comicDescriptionDiv);
+  comicDescriptionDiv.classList = "d-flex flex-column align-items-start justify-content-start"
   var title = document.createElement("h2");
   comicDescriptionDiv.append(title);
   title.textContent = "Daredevil: Born Again";
@@ -436,9 +479,11 @@ function dareSection() {
   descripP.textContent = "Karen Page, the former secretary of the Nelson & Murdock law offices in New York City and ex-girlfriend of Matt Murdock, had left years earlier to pursue an acting career. After a brief period of success, she became a heroin addict and was reduced to starring in pornographic films in Mexico. Strapped for cash, she sells the information that Matt is Daredevil for a shot of heroin. This information is sold upward to the Kingpin. Over the next six months, the Kingpin uses his influence to have the IRS freeze Murdock's accounts, the bank foreclose on his apartment, and police lieutenant Nicholas Manolis testify that he saw Murdock pay a witness to perjure himself."
   descripP.style.maxWidth = "85%"
   descripP.style.fontSize = "18px"
+  descripP.classList = "card-text";
   var comicRatings = document.createElement("h3");
   comicDescriptionDiv.append(comicRatings);
   comicRatings.textContent = "Comic Rating: ";
+  comicRatings.classList = "card-text";
   var comRatingP = document.createElement("span");
   comicDescriptionDiv.append(comRatingP);
   comRatingP.textContent = "8.7";
@@ -464,6 +509,7 @@ function dareSection() {
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
+  includedChar.classList = "text-white";
   var comicCharP = document.createElement("p");
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
@@ -489,6 +535,7 @@ function fantasticSection() {
  
   var comicDescriptionDiv = document.createElement("div");
     comicDescription.append(comicDescriptionDiv);
+    comicDescriptionDiv.classList = "d-flex flex-column align-items-start justify-content-start"
   var title = document.createElement("h2");
   comicDescriptionDiv.append(title);
   title.textContent = "Fantastic Four: The Coming of Galactus";
@@ -530,6 +577,7 @@ function fantasticSection() {
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
+  includedChar.classList = "text-white";
   var comicCharP = document.createElement("p");
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
@@ -556,6 +604,7 @@ function annSection() {
 
   var comicDescriptionDiv = document.createElement("div");
     comicDescription.append(comicDescriptionDiv);
+    comicDescriptionDiv.classList = "d-flex flex-column align-items-start justify-content-start"
   var title = document.createElement("h2");
   comicDescriptionDiv.append(title);
   title.textContent = "Annihilation";
@@ -596,6 +645,7 @@ function annSection() {
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
+  includedChar.classList = "text-white";
   var comicCharP = document.createElement("p");
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
@@ -621,6 +671,7 @@ function futureSection() {
 
   var comicDescriptionDiv = document.createElement("div");
     comicDescription.append(comicDescriptionDiv);
+    comicDescriptionDiv.classList = "d-flex flex-column align-items-start justify-content-start"
   var title = document.createElement("h2");
   comicDescriptionDiv.append(title);
   title.textContent = "X-Men: Days of Future Past";
@@ -661,6 +712,7 @@ function futureSection() {
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
+  includedChar.classList = "text-white";
   var comicCharP = document.createElement("p");
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);

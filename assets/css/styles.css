@@ -136,11 +136,17 @@ h2 {
     scale: 107%;
     transition-duration: 300ms;
 }
-.comicImage {
+.comicBgIMG {
     background: url(../images/comicBackground2.jpg);
     background-size: cover;
 }
 
+#comic-descrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #charSearch,
  #searchBtn {
     display: inline-block;
@@ -160,10 +166,6 @@ h2 {
     flex-direction: column;
     width: 100%;
    
-}
-#comic-descrip {
-    display: flex;
-
 }
 .h2Container {
     width: 75%;
@@ -232,10 +234,19 @@ h2 {
     .homeLink {
         font-size: 48px;
     }
+    #comic-descrip {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 @media (min-width = 800px) {
     .movie-card{
         width: 60%;
+    }
+    #comic-descrip {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
     }
 }
