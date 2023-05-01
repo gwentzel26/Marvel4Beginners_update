@@ -41,7 +41,7 @@ function searchCharacterId(event) {
   
 function postCharacterId (data) {
     var characterContainer = document.createElement("div");
-    characterContainer.classList = "col-8 d-flex flex-column align-items-center";
+    characterContainer.classList = "bgChar-text col-8 d-flex flex-column align-items-center";
     charCard.append(characterContainer);
 
     var createHeader = document.createElement("h2");

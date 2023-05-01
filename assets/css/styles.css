@@ -121,7 +121,13 @@ h2 {
     padding: 8px;
     border: 2px double white;
 }
-
+.bgChar-text {
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(14, 81, 147), rgb(5, 4, 52), rgb(0, 0, 0));
+    padding: 8px;
+    border: 6px double rgb(102, 102, 102);
+}
 .hoverScale:hover {
     scale: 110%;
     transition-duration:  300ms;
@@ -175,6 +181,7 @@ h2 {
     border: 4px double rgb(136, 5, 5);
 
 }
+
 #comicDiv {
     display: flex;
     justify-content: center;
