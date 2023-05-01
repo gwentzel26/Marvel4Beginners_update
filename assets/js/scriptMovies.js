@@ -40,12 +40,18 @@ function postMovieTrailer(data) {
     trailerDiv.append(trailer);
 
     var movieDiv = document.createElement("div");
-    movieDiv.classList = "col-xl-4 d-flex flex-column justify-content-center";
+    movieDiv.classList = "d-flex flex-column justify-content-center align-items-center"
+    // if (window.innerWidth >= 1000) {
+    //   movieDiv.classList = "d-flex flex-row justify-content-center align-items-center"
+    // } else {
+    //   movieDiv.classList = "d-flex flex-column justify-content-center align-items-center"
+    // }
     movieCard.append(movieDiv);
     var title = document.createElement("h3");
     title.textContent = data.fullTitle;
     movieDiv.append(title);
     var description = document.createElement("p");
+    description.classList = "text-center pt-8"
     description.textContent = data.videoDescription; 
     movieDiv.append(description);
 };

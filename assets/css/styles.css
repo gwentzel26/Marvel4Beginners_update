@@ -202,6 +202,7 @@ h2 {
 }
 .movieBorder{
     border: 18px double rgb(126, 0, 0);
+    border-radius: 8px;
 }
 .movie-card {
     margin-left: 5%;
@@ -235,6 +236,10 @@ h2 {
         font-size: 48px;
     }
     #comic-descrip {
+        display: flex;
+        flex-direction: row;
+    }
+    .movieDiv {
         display: flex;
         flex-direction: row;
     }
