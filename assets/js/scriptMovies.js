@@ -29,12 +29,14 @@ function postMovieTrailer(data) {
     movieCard.textContent = "";
     
     var trailerDiv = document.createElement("div");
-    trailerDiv.classList = "col-xl-8";
+    trailerDiv.classList = "d-flex col-xl-8 w-60 h-100 justify-content-center align-items-center";
     movieCard.append(trailerDiv);
     var trailer = document.createElement("iframe");
+    trailer.setAttribute("allowFullScreen", true);
+    trailer.setAttribute("scale", .75);
     trailer.setAttribute("src", data.linkEmbed);
-    trailer.setAttribute("height", "450");
-    trailer.setAttribute("width", "900");
+    trailer.setAttribute("height", "60%");
+    trailer.setAttribute("width", "90%");
     trailerDiv.append(trailer);
 
     var movieDiv = document.createElement("div");
