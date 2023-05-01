@@ -599,7 +599,7 @@ function annSection() {
   comicLink.href = "https://www.amazon.com/Annihilation-Omnibus-Keith-Giffen/dp/1302934074/ref=sr_1_1?crid=297KU3XPCTXV5&keywords=annihilation+comic&qid=1645939451&sprefix=annihilation+comic%2Caps%2C202&sr=8-1";
   comicLink.setAttribute("target", "_blank");
   var comicImage = document.createElement("img");
-  comicImage.src="https://static.wikia.nocookie.net/marveldatabase/images/4/40/Annihilation_Vol_1_6.jpg/revision/latest?cb=20200909044326";
+  comicImage.src="https://m.media-amazon.com/images/I/51oNYrpbIHL._AC_UF1000,1000_QL80_.jpg";
   comicImage.alt="Annihilation";
   comicImage.style.height = "300px";
   comicImage.style.width = "220px";
