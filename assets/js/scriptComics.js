@@ -506,6 +506,7 @@ function dareSection() {
   var yearIssued = document.createElement("h3");
   comicDescriptionDiv.append(yearIssued);
   yearIssued.textContent = "Year Issued: 1986";
+  yearIssued.classList = "card-text";
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
@@ -513,6 +514,7 @@ function dareSection() {
   var comicCharP = document.createElement("p");
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
+  comicCharP.classList = "card-text";
   comicCharP.textContent = ["Matt Murdock", " Wilson Fisk", " Foggy Nelson" , " Karen Page", " Ben Urich"];
 }
 
@@ -548,9 +550,11 @@ function fantasticSection() {
   descripP.textContent = "Maximus fires his Atmo-Gun with the intent to destroy the human race. However, the gun fails and Maximus resorts to creating a negative zone around the Great Refuge that separates the Inhumans from the rest of the world. The Fantastic Four escape and head back to the Baxter Building. There they are visited by the Watcher who warns them of the coming of Galactus. The Watcher tried to hide the Earth from his herald, the Silver Surfer, but was unsuccessful. The Surfer arrives and summons his master."
   descripP.style.maxWidth = "85%"
   descripP.style.fontSize = "18px"
+  descripP.classList = "card-text";
   var comicRatings = document.createElement("h3");
   comicDescriptionDiv.append(comicRatings);
   comicRatings.textContent = "Comic Rating: ";
+  comicRatings.classList = "card-text";
   var comRatingP = document.createElement("span");
   comicDescriptionDiv.append(comRatingP);
   comRatingP.textContent = "8.6";
@@ -574,6 +578,7 @@ function fantasticSection() {
   var yearIssued = document.createElement("h3");
   comicDescriptionDiv.append(yearIssued);
   yearIssued.textContent = "Year Issued: 1966";
+  yearIssued.classList = "card-text";
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
@@ -581,6 +586,7 @@ function fantasticSection() {
   var comicCharP = document.createElement("p");
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
+  comicCharP.classList = "card-text";
   comicCharP.textContent = ["Fantastic Four", " Galactus", " Silver Surfer" , " The Watcher"];
 }
 
@@ -617,9 +623,11 @@ function annSection() {
   descripP.textContent = "Annihilus, lord of the Negative Zone, has declared war! And as his unstoppable Annihilation Wave swarms into the Marvel Universe, demolishing all in its path, only a handful of heroes can resist the destruction! As Nova learns the ways of war from Drax the Destroyer, the Silver Surfer seeks out his former master Galactus for aid, the Super-Skrull fights for his son's life and Ronan the Accuser faces Gamora and her woman warriors! Nova and Quasar's army leads the charge, but as heroes fall and Annihilus rises, the universe's one remaining hope may be Thanos, the Mad Titan!"
   descripP.style.maxWidth = "85%"
   descripP.style.fontSize = "18px"
+  descripP.classList = "card-text";
   var comicRatings = document.createElement("h3");
   comicDescriptionDiv.append(comicRatings);
   comicRatings.textContent = "Comic Rating: ";
+  comicRatings.classList = "card-text";
   var comRatingP = document.createElement("span");
   comicDescriptionDiv.append(comRatingP);
   comRatingP.textContent = "8.2";
@@ -642,6 +650,7 @@ function annSection() {
   var yearIssued = document.createElement("h3");
   comicDescriptionDiv.append(yearIssued);
   yearIssued.textContent = "Year Issued: 2006";
+  yearIssued.classList = "card-text";
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
@@ -649,6 +658,7 @@ function annSection() {
   var comicCharP = document.createElement("p");
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
+  comicCharP.classList = "card-text";
   comicCharP.textContent = ["Annihilus", " Galactus", " Ravenous" , " Silver Surfer", " Thanos"];
 }
 
@@ -684,9 +694,11 @@ function futureSection() {
   descripP.textContent = " In the future, Sentinels rule a dystopian United States, and mutants are hunted and placed in internment camps. Having conquered North America and hunted all mutants and other superhumans, the Sentinels are turning their attention to the rest of the world. On the eve of a feared nuclear holocaust, the few remaining X-Men, while making a desperate attempt to stop the Sentinels, send Kitty Pryde's mind backward through time, to possess the body of her younger-self and to prevent a pivotal event in mutant–human history and the cause of these events: the assassination of Senator Robert Kelly along with Charles Xavier and Moira MacTaggert by Mystique's newly reassembled Brotherhood of Evil Mutants."
   descripP.style.maxWidth = "85%"
   descripP.style.fontSize = "18px"
+  descripP.classList = "card-text";
   var comicRatings = document.createElement("h3");
   comicDescriptionDiv.append(comicRatings);
   comicRatings.textContent = "Comic Rating: ";
+  comicRatings.classList = "card-text";
   var comRatingP = document.createElement("span");
   comicDescriptionDiv.append(comRatingP);
   comRatingP.textContent = "8.3";
@@ -709,6 +721,7 @@ function futureSection() {
   var yearIssued = document.createElement("h3");
   comicDescriptionDiv.append(yearIssued);
   yearIssued.textContent = "Year Issued: 1981";
+  yearIssued.classList = "card-text";
   var includedChar = document.createElement("h3");
   comicDescriptionDiv.append(includedChar);
   includedChar.textContent = "Main Characters: "
@@ -716,5 +729,6 @@ function futureSection() {
   var comicCharP = document.createElement("p");
   comicCharP.style.fontSize = "18px";
   comicDescriptionDiv.append(comicCharP);
+  comicCharP.classList = "card-text";
   comicCharP.textContent = ["X-Men", " Sentenils", " Brotherhood of Evil Mutants"];
 }
